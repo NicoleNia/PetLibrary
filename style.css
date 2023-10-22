@@ -1,0 +1,256 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    line-height: 1.3;
+    overflow-x: none;
+
+}
+
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+    line-height: 1.5;
+}
+.showcase h1 {
+    font-size: 60px;
+}
+hr {
+    height:2px;
+    border-width:0;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color) url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+
+
+
+.green-strip {
+   border-width:0;
+   color: white;
+   background-color: green;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.flexrow {
+   display: flex;
+   flex-direction: row;
+   align-items: left;
+   width: 80%;
+   margin: auto;
+}
+#community-hr {
+    height:2px;
+    border-width:0;
+    background-color: white;
+    width: 20%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+
+
+
+.main {
+	display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.column {
+	flex-direction: column;
+    flex-basis: auto;
+    align-items: stretch;
+}
+.overlay {
+   align-items: baseline;
+   background: white;
+   padding: 30px;
+}
+
+
+#about-us {
+	background-image: url('https://i.postimg.cc/xTYyB5Gn/eggs.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+    order: 1;
+    padding: 40px;
+    color: green;
+}
+#explore-more {
+background: orange;
+order: 2;
+padding: 40px;
+color: white;
+
+}
+#contact-us {
+	background-image: url('https://i.postimg.cc/6pRNm9B8/2268752.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+    order: 3;
+    padding: 40px;
+    color: green;
+}
+
+
+
+.home-info {
+	display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.calling {
+	transform: translate(-30px, 30px);
+    padding: 10px;
+}
+.petowner {
+	transform: translate(20px, 30px);
+    padding: 10px;
+    order:-1;
+}
+
+
+
+
+.experience {
+	line-height: 1.3;
+    text-align: center;
+}
+.experience-text {
+	width: 80%; 
+    margin: auto;
+}
+
+.circles {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 40px 40px 40px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.circle-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 50%;
+
+}
+
+.container:hover .circle-overlay {
+  opacity: 1;
+  transform: scale(1.1);
+  
+}
+
+.text {
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  justify-content: center;
+}
+.foot-item {
+  padding: 20px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.sidebar {
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+.sidebar a {
+  padding: 6px;
+  text-decoration: none;
+  font-size: auto;
+  color: red;
+}
+.sidebar a:hover { color: blue; }
