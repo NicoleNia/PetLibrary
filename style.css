@@ -13,6 +13,18 @@ body {
   overflow-x: none;
 }
 
+.hrgreen {
+  border: 1px solid #285A5B;
+}
+.green {
+    color: #285A5B;
+}
+.center-align {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
 h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 50px;
@@ -33,7 +45,7 @@ h1 {
   font-size: 60px;
 }
 
-hr {
+.herohr {
   height: 2px;
   border-width: 0;
   background-color: white;
@@ -76,7 +88,54 @@ hr {
   z-index: 2;
 }
 
+.grey-strip {
+  border-width: 0;
+  background-color: #DBDAD0;
+  color: #285A5B;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.arrow {
+  display: inline-block;
+  padding: 3px;
+  font-size: 30px;
+}
+.down {
+  transform: rotate(90deg);
+}
 
+
+
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+.bottom-center {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+.card {
+  transition: 0.3s;
+  width: 40%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.card:hover {
+  width: 45%;
+}
 
 
 .green-strip {
