@@ -133,8 +133,12 @@ h1 {
   text-align: center;
 }
 
+.card img {
+  max-height: 120px;
+}
+
 .card:hover {
-  width: 45%;
+  transform: scale(1.25);
 }
 
 
