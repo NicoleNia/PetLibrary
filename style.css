@@ -92,8 +92,8 @@ h1 {
   border-width: 0;
   background-color: #DBDAD0;
   color: #285A5B;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
 }
 .arrow {
@@ -115,7 +115,7 @@ h1 {
   padding: 0 20px 20px 20px;
   text-align: center;
   margin-top: 30px;
-  color: white;
+  color: #FFFDFB;
 }
 
 .bottom-center {
@@ -257,13 +257,14 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 40px;
-  padding: 0 40px 40px 40px;
+  gap: auto;
+  margin: auto;
+  width: 70%;
 }
 
 .container {
   position: relative;
-  width: 25%;
+  width: 20%;
 }
 
 .image {
