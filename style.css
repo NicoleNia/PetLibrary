@@ -131,6 +131,7 @@ h1 {
   height: 40%;
   position: relative;
   text-align: center;
+  max-height: 200px;
 }
 
 .card:hover {
